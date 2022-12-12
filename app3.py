@@ -12,7 +12,7 @@ def main():
 
     species = df['species'].unique()
 
-    st.text('아이리스 꽃은' + species + '으로 되어있다')
+    st.text('아이리스 꽃은 ' + species + ' 종이 있다')
 
 if __name__ == '__main__':
     main()

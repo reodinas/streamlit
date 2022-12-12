@@ -33,7 +33,7 @@ def main():
     if st.checkbox('show/hide'):
         st.dataframe(df)
     #else:
-        #st.write(;)
+        #st.write('')
     
     # 셀렉트박스: 여러개 중에 한개 선택
     language = ['Python', 'C', 'JAVA', 'PHP', 'GO']
