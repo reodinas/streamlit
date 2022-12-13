@@ -20,5 +20,7 @@ def main():
     st.help(sum)
     st.help(len)
 
+    # 웹페이지에 표시하고 싶을땐 streamlit 함수, 터미널창에 출력하고 싶으면 print()함수
+
 if __name__ == '__main__':
     main()
