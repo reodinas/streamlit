@@ -42,17 +42,16 @@ def main():
     plt.hist(data=df, x='petal_length', bins=20, rwidth=0.8)
     st.pyplot(fig4)
 
-    ''' 
-    우리가 주피터노트북에서 그렸던
-    plt차트나 sb차트는, 스트림릿에서 표시하려면
-    plt.figure()로 먼저 영역을 잡아주고
-    st.pyplor 함수로 웹 화면에 그려준다. 
+    
+    # 우리가 주피터노트북에서 그렸던
+    # plt차트나 sb차트는, 스트림릿에서 표시하려면
+    # plt.figure()로 먼저 영역을 잡아주고
+    # st.pyplor 함수로 웹 화면에 그려준다. 
         
-    그리고 데이터 프레임의 내장 차트도, 마찬가지로 해준다
+    # 그리고 데이터 프레임의 내장 차트도, 마찬가지로 해준다
         
-    df의 species 컬럼의 각 종별로 몇개의 데이터가 있는지 차트로
-    '''
-
+    # df의 species 컬럼의 각 종별로 몇개의 데이터가 있는지 차트로 그리기
+    
     fig5 = plt.figure()
     df['species'].value_counts().plot(kind='bar')
     st.pyplot(fig5)
