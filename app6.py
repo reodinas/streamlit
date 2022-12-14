@@ -18,7 +18,8 @@ def main():
     # 숫자 입력 받는 방법
     year = st.number_input('출생년도를 입력하세요.', min_value=1900, max_value=2022)
     st.text(year)
-
+    st.write(year)
+    
     number = st.number_input('실수를 입력하세요')
     st.text(number)
 

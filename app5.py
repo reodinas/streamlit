@@ -13,13 +13,21 @@ def main():
     st.image(img)
     st.image(img, use_column_width=True) # 브라우저의 가로사이즈에 맞게
 
-    image_url = 'https://www.ibric.org/upload/board/files/spcont/spc_9/0008719_1.jpg'
+    image_url = 'https://cdn.pixabay.com/photo/2022/11/19/18/45/gray-geese-7602847__340.jpg'
     st.image(image_url)
 
 
-    # 동영상
+    # 비디오
     video_file = open('streamlit_data/secret_of_success.mp4', mode='rb') # rb: read binary
     st.video(video_file)
 
+
+    # 오디오
+    audio_file = open('streamlit_data/song.mp3', 'rb')
+    st.audio(audio_file)
+
+
 if __name__ == '__main__':
     main()
+
+    
