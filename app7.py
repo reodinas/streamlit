@@ -3,10 +3,10 @@
 import streamlit as st
 import pandas as pd
 import os
-from datetime import date, datetime
+from datetime import datetime
 from PIL import Image
 
-# 함수정의
+
 # 디렉토리(폴더)명과 파일을 알려주면,
 # 해당 디렉토리에 파일을 저장해 주는 함수.
 def save_uploaded_file(directory, file):

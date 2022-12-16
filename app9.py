@@ -57,7 +57,7 @@ def main():
     st.pyplot(fig5)
 
     fig6 = plt.figure()
-    df['petal_length'].hist()
+    df['petal_length'].hist(rwidth=0.8)
     st.pyplot(fig6)
 
 

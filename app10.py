@@ -1,5 +1,4 @@
 import streamlit as st
-import numpy as np
 import pandas as pd
 
 # 웹페이지에서 차트를 그릴 때 깔끔한 plotly 라이브러리
@@ -31,10 +30,10 @@ def main():
         st.bar_chart(df_selected)
 
 
-    df2 = pd.read_csv('streamlit_data/iris.csv')
+    df3 = pd.read_csv('streamlit_data/iris.csv')
     
     ### altair 라이브러리의 mark_circle 함수 사용법
-    chart = alt.Chart(df2).mark_circle().encode(
+    chart = alt.Chart(df3).mark_circle().encode(
         x='petal_length',
         y='petal_width',
         color = 'species'
@@ -43,10 +42,10 @@ def main():
 
     ### 위치 정보를 지도에 표시하는 방법
     ### 스트림릿의 map 차트
-    df3 = pd.read_csv('streamlit_data/location.csv', index_col=0)
-    st.dataframe(df3.head(3))
+    df2 = pd.read_csv('streamlit_data/location.csv', index_col=0)
+    st.dataframe(df2.head(3))
 
-    st.map(df3, zoom=10)
+    st.map(df2, zoom=10)
 
 
     df4 = pd.read_csv('streamlit_data/prog_languages_data.csv', index_col=0)
