@@ -4,6 +4,7 @@ import streamlit as st
 from app8_home import run_home_app
 from app8_EDA import run_eda_app
 from app8_ML import run_ml_app
+from app8_about import run_about_app
 
 def main():
     st.title('파일 분리 앱')
@@ -23,7 +24,7 @@ def main():
         run_ml_app()
 
     elif choice == 'About':
-        pass
+        run_about_app
 
 
 
